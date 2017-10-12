@@ -35,7 +35,6 @@ if __name__ == '__main__':
   predictions_correct = tf.cast(tf.equal(prediction, output_layer), tf.float32)
   reward = tf.reduce_mean(predictions_correct)
 
-  # x1 > x2
   for i in range(2000):
     x1 = round(random.random() * 10)
     x2 = round(random.random() * 10)
